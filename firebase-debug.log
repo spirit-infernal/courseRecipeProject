@@ -1,0 +1,232 @@
+[debug] [2019-08-21T15:39:23.482Z] ----------------------------------------------------------------------
+[debug] [2019-08-21T15:39:23.484Z] Command:       C:\Program Files (x86)\Nodist\v-x64\11.13.0\node.exe C:\Program Files (x86)\Nodist\bin\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-21T15:39:23.484Z] CLI Version:   7.2.4
+[debug] [2019-08-21T15:39:23.484Z] Platform:      win32
+[debug] [2019-08-21T15:39:23.484Z] Node Version:  v11.13.0
+[debug] [2019-08-21T15:39:23.485Z] Time:          Wed Aug 21 2019 18:39:23 GMT+0300 (GMT+03:00)
+[debug] [2019-08-21T15:39:23.485Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-21T15:39:23.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-21T15:39:23.492Z] > authorizing via signed-in user
+[debug] [2019-08-21T15:39:23.492Z] [iam] checking project recipebookcourseproject-e958e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-21T15:39:23.493Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-21T15:39:23.493Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-21T15:39:23.694Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-21T15:39:23.708Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/recipebookcourseproject-e958e:testIamPermissions  
+
+[debug] [2019-08-21T15:39:24.748Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-21T15:39:24.753Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/recipebookcourseproject-e958e  
+ 
+[debug] [2019-08-21T15:39:25.007Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'recipebookcourseproject-e958e'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-08-21T15:39:25.011Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recipebookcourseproject-e958e/versions  
+
+[debug] [2019-08-21T15:39:26.101Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-21T15:39:26.102Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-08-21T15:39:26.108Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 21 Aug 2019 15:39:27 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/recipebookcourseproject-e958e/versions",
+        "path": "/v1beta1/sites/recipebookcourseproject-e958e/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/recipebookcourseproject-e958e/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-08-21T15:41:50.438Z] ----------------------------------------------------------------------
+[debug] [2019-08-21T15:41:50.440Z] Command:       C:\Program Files (x86)\Nodist\v-x64\11.13.0\node.exe C:\Program Files (x86)\Nodist\bin\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-21T15:41:50.440Z] CLI Version:   7.2.4
+[debug] [2019-08-21T15:41:50.440Z] Platform:      win32
+[debug] [2019-08-21T15:41:50.440Z] Node Version:  v11.13.0
+[debug] [2019-08-21T15:41:50.441Z] Time:          Wed Aug 21 2019 18:41:50 GMT+0300 (GMT+03:00)
+[debug] [2019-08-21T15:41:50.441Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-21T15:41:50.448Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-21T15:41:50.448Z] > authorizing via signed-in user
+[debug] [2019-08-21T15:41:50.448Z] [iam] checking project recipebookcourseproject-e958e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-21T15:41:50.449Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/recipebookcourseproject-e958e:testIamPermissions  
+
+[debug] [2019-08-21T15:41:51.527Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-21T15:41:51.529Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/recipebookcourseproject-e958e  
+ 
+[debug] [2019-08-21T15:41:51.813Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'recipebookcourseproject-e958e'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-08-21T15:41:51.829Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recipebookcourseproject-e958e/versions  
+
+[debug] [2019-08-21T15:41:52.897Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-21T15:41:52.897Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-08-21T15:41:52.903Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 21 Aug 2019 15:41:53 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/recipebookcourseproject-e958e/versions",
+        "path": "/v1beta1/sites/recipebookcourseproject-e958e/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/recipebookcourseproject-e958e/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-08-21T15:45:24.128Z] ----------------------------------------------------------------------
+[debug] [2019-08-21T15:45:24.130Z] Command:       C:\Program Files (x86)\Nodist\v-x64\11.13.0\node.exe C:\Program Files (x86)\Nodist\bin\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-21T15:45:24.131Z] CLI Version:   7.2.4
+[debug] [2019-08-21T15:45:24.131Z] Platform:      win32
+[debug] [2019-08-21T15:45:24.131Z] Node Version:  v11.13.0
+[debug] [2019-08-21T15:45:24.132Z] Time:          Wed Aug 21 2019 18:45:24 GMT+0300 (GMT+03:00)
+[debug] [2019-08-21T15:45:24.132Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-21T15:45:24.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-21T15:45:24.141Z] > authorizing via signed-in user
+[debug] [2019-08-21T15:45:24.141Z] [iam] checking project recipebookcourseproject-e958e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-21T15:45:24.143Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/recipebookcourseproject-e958e:testIamPermissions  
+
+[debug] [2019-08-21T15:45:25.228Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-21T15:45:25.231Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/recipebookcourseproject-e958e  
+ 
+[debug] [2019-08-21T15:45:25.730Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'recipebookcourseproject-e958e'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-08-21T15:45:25.735Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recipebookcourseproject-e958e/versions  
+
+[debug] [2019-08-21T15:45:26.824Z] <<< HTTP RESPONSE 500
+[debug] [2019-08-21T15:45:26.824Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-08-21T15:45:26.827Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 21 Aug 2019 15:45:27 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/recipebookcourseproject-e958e/versions",
+        "path": "/v1beta1/sites/recipebookcourseproject-e958e/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/recipebookcourseproject-e958e/versions"
+      },
+      "method": "POST"
+    }
+  }
+}

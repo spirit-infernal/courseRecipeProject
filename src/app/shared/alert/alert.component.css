@@ -1,0 +1,35 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.alert-box {
+  position: fixed;
+  z-index: 25;
+  width: 60vw;
+  top: 30vh;
+  left: 20vw;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.alert-box p {
+  width: 100%;
+  flex: 0 1 100%;
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.alert-box-buttons {
+  width: 100%;
+  flex: 0 1 100%;
+}
