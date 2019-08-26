@@ -4,7 +4,7 @@ import { Ingredient } from "../models/ingredient.model";
 import { Subject } from "rxjs";
 import { Store } from "@ngrx/store";
 import * as shopActions from '../components/shop/store/shop.actions';
-import * as shopComponentActions from '../components/shop/store/shop.reducer';
+import * as fromApp from '../store/app.reducer';
 
 
 @Injectable()
@@ -30,7 +30,7 @@ export class RecipeService {
     //   ])
     // ];
 
-    constructor(private store: Store<shopComponentActions.AppState>) {}
+    constructor(private store: Store<fromApp.AppState>) {}
       getRecipes() {
           return this.recipes.slice();
       }

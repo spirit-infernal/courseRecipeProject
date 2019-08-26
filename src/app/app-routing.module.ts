@@ -3,7 +3,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
-  { path: 'auth', loadChildren: './auth/auth.module#AuthModule' },
+  { path: 'auth', loadChildren: './components/auth/auth.module#AuthModule' },
   { path: 'recipes', loadChildren: './components/recipes/recipes.module#RecipesModule' },
   { path: 'shop', loadChildren: './components/shop/shop.module#ShopModule' }
 ];

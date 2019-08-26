@@ -3,8 +3,8 @@ import { NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
 import { AuthService, AuthResponseData } from "./auth.service";
 import { Observable, Subscription } from "rxjs";
-import { AlertComponent } from '../shared/alert/alert.component';
-import { PlaceholderDirective } from "../shared/placeholder/placeholder.directive";
+import { AlertComponent } from '../../shared/alert/alert.component';
+import { PlaceholderDirective } from "../../shared/placeholder/placeholder.directive";
 
 @Component({
   selector: 'app-auth',
